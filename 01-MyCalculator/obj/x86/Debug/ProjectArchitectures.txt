@@ -1,0 +1,1 @@
+C:\Users\raul\Development\Hibrida\MyCalculator\MyCalculator.csproj;x86

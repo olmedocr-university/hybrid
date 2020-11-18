@@ -1,0 +1,79 @@
+﻿<Page
+    x:Class="MyCalculator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyCalculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:ConnectionId='2' Margin="4" Padding="0" x:Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition x:ConnectionId='3' Width="0" x:Name="column"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition x:ConnectionId='4' Height="0" x:Name="row"/>
+        </Grid.RowDefinitions>
+
+        <ToggleSwitch x:ConnectionId='5'                               />
+
+        <TextBlock x:ConnectionId='6'  x:Name="result" Foreground="Black" Text="0" Grid.Row="1" FontSize="50" Grid.ColumnSpan="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="8"/>
+
+        <Button Content="%" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="CE" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="C" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="DEL" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="mod" Grid.Row="2" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        
+        <Button Content="1/x" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="x^2" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="2 sqrt(x)" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="/" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="exp" Grid.Row="3" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        
+        <Button Content="7" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="8" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="9" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="X" Grid.Row="4" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="n!" Grid.Row="4" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+
+        <Button Content="4" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="5" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="6" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="-" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="1/x" Grid.Row="5" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+
+        <Button Content="1" Grid.Row="6" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="2" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="3" Grid.Row="6" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="+" Grid.Row="6" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="|x|" Grid.Row="6" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+
+        <Button Content="+/-" Grid.Row="7" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="0" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="." Grid.Row="7" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="=" Grid.Row="7" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="x^2" Grid.Row="7" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+
+        <Button Content="e" Grid.Row="8" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="π" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="(" Grid.Row="8" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content=")" Grid.Row="8" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+        <Button Content="log" Grid.Row="8" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2"/>
+
+    </Grid>
+</Page>
+
